@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 18px;
+    font-family: "Space Grotesk", "sans-serif";
+
+    width: 100%;
+}
+
+.logo {
+    height: 30px;
+}
+
+.card_section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background: rgb(33,9,47);
+    background: linear-gradient(312deg, rgba(33,9,47,1) 7%, rgba(96,5,148,1) 26%, rgba(142,133,147,1) 50%, rgba(147,74,142,1) 60%, rgba(46,20,61,1) 76%, rgba(33,9,47,1) 89%);
+    padding: 40px 20px;
+}
+
+.card_section_two {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    width: 100%;
+    background: rgb(33,9,47);
+    background: linear-gradient(312deg, rgba(33,9,47,1) 7%, rgba(96,5,148,1) 26%, rgba(142,133,147,1) 50%, rgba(147,74,142,1) 60%, rgba(46,20,61,1) 76%, rgba(33,9,47,1) 89%);
+    padding: 40px 20px;
+}
+
+.card_section img[alt="bg-card-back"],.card_section_two img[alt="bg-card-back"]{
+    max-width: 280px;
+}
+
+.card_section img {
+     border-radius: 10px;
+}
+
+
+.card img:nth-child(1){
+    width: 55px;
+}
+
+.bg_card,.bg_card_two {
+    position: relative;
+}
+
+.bg_card p{
+    position: absolute;
+    top: calc(50% - 14px);
+    right: 40px;
+
+    color: hsl(270, 3%, 87%);
+}
+
+.bg_card_two p{
+    position: absolute;
+    top: 65px;
+    right: 40px;
+
+    color: hsl(270, 3%, 87%);
+}
+
+.number_error,.name_error{
+    color: hsl(0, 100%, 66%);
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+    font-size: 0.8rem;
+
+    font-family: "Space Grotesk", "sans-serif";
+}
+
+
+
+
+.front_card figure{
+    background-image: url(../images/bg-card-front.png);
+    background-repeat: no repeat;
+    background-position: top right;
+
+    height: 150px;
+    width: 280px;
+
+    border-radius: 10px;
+
+    padding: 10px;
+
+    position: absolute;
+    left: 20px;
+    bottom: -37.9px;
+}
+
+.front_card_two figure {
+    background-image: url(../images/bg-card-front.png);
+    background-repeat: no repeat;
+
+    height: 150px;
+    width: 280px;
+
+    border-radius: 10px;
+
+    padding: 10px;
+
+    position: absolute;
+    left: 20px;
+    bottom: -37.9px;
+}
+
+.card_info {
+    display: flex;
+    flex-direction: column;
+
+    color: hsl(0, 0%, 100%);
+
+    margin-top: 20px;
+    padding: 10px;
+
+    font-family: "Space Grotesk", "sans-serif";
+    font-size: 1.2rem;
+}
+
+.personal_details,.personal_details_two {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 10px;
+
+    font-size: 0.8rem;
+}
+
+form {
+    padding: 90px 20px;
+
+    background:  hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+form div input {
+    width: 100%;
+}
+
+form div + div {
+    margin-top: 10px;
+}
+
+
+input {
+    font-family: "Space Grotesk", "sans-serif";
+
+    padding: 10px;
+
+    border-radius: 6px;
+
+    font-size: 1.2rem;
+
+    border: 1px solid hsl(279, 6%, 55%);
+}
+
+.date_section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.date_section > div:last-child input{
+    width: 140px;
+}
+
+.date_section > div:last-child{
+    margin: 0;
+}
+
+.date_section > div:last-child div {
+    position: relative;
+}
+.date > div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.date div{
+    margin-top: 0;
+}
+
+.date div div {
+    position: relative;
+}
+.date div div p ,.cvcError{
+    position: absolute;
+    bottom:-20px;
+    left: 0;
+    width: 120%;
+
+    font-size: 0.8rem;
+
+    color: hsl(0, 100%, 66%);
+    font-family: "Space Grotesk", "sans-serif";
+}
+
+
+
+
+button{
+    background: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+
+    font-size: 1.3rem;
+    font-family: "Space Grotesk", "sans-serif";
+    padding: 15px;
+    
+    border-radius: 8px;
+    border: none;
+    outline: none;
+
+    margin-top: 30px;
+}
+
+.gratitude_section {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+
+.continue_btn {
+    display: block;
+    width: 100%;
+    
+}
+
+.complete_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.complete_img img[alt="complete"] {
+    
+    margin: 30px 0 30px;
+}
+
+hgroup{
+    text-align: center;
+    font-size: 1.2rem;
+
+    color: hsl(278, 68%, 11%);
+}
+
+h3{
+    font-size: 18px;
+    color: hsl(270, 3%, 87%);
+    margin: 20px 0 30px;
+}
+
+.complete_section {
+    background: hsl(0, 0%, 100%);
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.show_complete_section {
+    display: flex;
+}
+
+.hide_form {
+    display: none;
+}
+
+.bottom_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 15px;
+}
+
+
+@media (min-width: 768px) {
+    .main_component {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 100vh;
+    }
+
+    form {
+        width: 400px;
+    }
+
+    .form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+
+        flex: 4;
+    }
+
+   
+    .card_section {
+        height: 100vh;
+        flex: 1;
+    }
+
+    .front_card figure{
+        top: 20%;
+        left: 35%;
+
+        height: 175px;
+        width: 320px;
+    }
+
+    .bg_card{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        width: 320px;
+    }
+
+    .card_section .bg_card img {
+        height: 175px;
+        width: 100%;
+        max-width: 320px;
+    }
+
+
+
+    .date_section > div:last-child input{
+        width: 160px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+.invalid {
+    outline: 2px solid hsl(0, 100%, 66%);
+}
